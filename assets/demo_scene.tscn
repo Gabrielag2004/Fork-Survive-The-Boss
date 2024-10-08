@@ -23,16 +23,17 @@ size = Vector3(10, 1, 10)
 [node name="Overlay" parent="." instance=ExtResource("1")]
 
 [node name="Player25D" parent="." instance=ExtResource("2")]
-z_index = -3952
+z_index = -3956
 position = Vector2(0, -11.3137)
 
 [node name="Shadow25D" parent="." instance=ExtResource("3")]
 visible = true
 z_index = -3958
-position = Vector2(0, 22401.1)
+position = Vector2(0, 10.7834)
+spatial_position = Vector3(0, -0.476563, 0)
 
 [node name="Platform0" type="Node2D" parent="."]
-z_index = -3954
+z_index = -3952
 position = Vector2(-256, -113.137)
 script = ExtResource("4")
 spatial_position = Vector3(-8, 5, 0)
@@ -51,7 +52,7 @@ texture = ExtResource("6")
 script = ExtResource("7")
 
 [node name="Platform1" type="Node2D" parent="."]
-z_index = -3956
+z_index = -3954
 position = Vector2(-256, -339.411)
 script = ExtResource("4")
 spatial_position = Vector3(-8, 5, -10)
@@ -84,6 +85,7 @@ collision_mask = 1048575
 shape = SubResource("1")
 
 [node name="PlatformSprite" type="Sprite2D" parent="Platform2"]
+position = Vector2(-113, 249.373)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6")
 script = ExtResource("7")

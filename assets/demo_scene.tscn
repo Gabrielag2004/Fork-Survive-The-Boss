@@ -3,7 +3,11 @@
 [ext_resource type="PackedScene" uid="uid://ivolxaqaaddk" path="res://assets/shadow/shadow_25d.tscn" id="3"]
 [ext_resource type="Script" path="res://addons/node25d/node_25d.gd" id="4"]
 [ext_resource type="Texture2D" uid="uid://cocwocceljq4g" path="res://assets/platform/textures/forty_five.png" id="6"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" path="res://assets/player/personaje_moya.png" id="6_i7lay"]
+=======
+[ext_resource type="Texture2D" uid="uid://dqh56p2ifmpvd" path="res://assets/player/personaje_moya.png" id="6_i7lay"]
+>>>>>>> Stashed changes
 [ext_resource type="Script" path="res://assets/Scrips/Movimiento/character_body_2d.gd" id="6_uln5k"]
 [ext_resource type="Script" path="res://assets/platform/platform_sprite.gd" id="7"]
 [ext_resource type="AudioStream" uid="uid://c2su2nuhi1rof" path="res://assets/mr_mrs_robot.ogg" id="10"]
@@ -194,7 +198,11 @@ script = ExtResource("6_uln5k")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="personaje_principal/CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_370gt")
 animation = &"Izquierda"
+<<<<<<< Updated upstream
 frame_progress = 0.438356
+=======
+frame_progress = 0.751998
+>>>>>>> Stashed changes
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="personaje_principal/CharacterBody2D"]
 shape = SubResource("CapsuleShape2D_bttid")

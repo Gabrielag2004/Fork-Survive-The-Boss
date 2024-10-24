@@ -1,1 +1,6 @@
 res://assets/demo_scene.tscn
+res://assets/Scrips/Movimiento/character_body_2d.gd
+res://addons/node25d/node_25d.gd
+res://assets/player/player_math_25d.gd
+res://assets/player/player_sprite.gd
+res://addons/node25d/y_sort_25d.gd

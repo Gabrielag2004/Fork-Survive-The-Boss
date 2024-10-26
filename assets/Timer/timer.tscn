@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cx14reyaf1jue"]
+
+[ext_resource type="Script" path="res://assets/Timer/timer.gd" id="1_eydi2"]
+[ext_resource type="Texture2D" uid="uid://cveucmq0ym8yi" path="res://assets/Timer/ghost.png" id="2_kks0q"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_eydi2")
+
+[node name="FlashTimer" type="Timer" parent="."]
+wait_time = 60.0
+autostart = true
+
+[node name="Ghost" type="Sprite2D" parent="."]
+position = Vector2(746, 448)
+scale = Vector2(0.349609, 0.335938)
+texture = ExtResource("2_kks0q")
+
+[node name="TimerRemaining" type="Label" parent="."]
+offset_left = 721.0
+offset_top = 306.0
+offset_right = 767.0
+offset_bottom = 355.0
+text = "44444
+ "
+
+[connection signal="timeout" from="FlashTimer" to="." method="_on_flash_timer_timeout"]

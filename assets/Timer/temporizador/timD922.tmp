@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://cx14reyaf1jue"]
+
+[ext_resource type="Script" path="res://assets/Timer/temporizador/timer.gd" id="1_u6ewh"]
+[ext_resource type="Texture2D" uid="uid://cxfugmoj3y5kn" path="res://assets/Timer/animacion/barra.webp" id="3_ews13"]
+[ext_resource type="Texture2D" uid="uid://hduwgorvpdgb" path="res://assets/Timer/animacion/cabeza.webp" id="4_ukyid"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_u6ewh")
+
+[node name="FlashTimer" type="Timer" parent="."]
+wait_time = 60.0
+autostart = true
+
+[node name="TimerRemaining" type="Label" parent="."]
+offset_left = 808.0
+offset_top = 220.0
+offset_right = 889.0
+offset_bottom = 274.0
+text = "44444
+ "
+
+[node name="Barra" type="Sprite2D" parent="."]
+position = Vector2(799, 472)
+scale = Vector2(1, 0.870307)
+texture = ExtResource("3_ews13")
+
+[node name="Cabeza" type="Sprite2D" parent="."]
+position = Vector2(799, 317)
+scale = Vector2(1, 0.957338)
+texture = ExtResource("4_ukyid")
+
+[connection signal="timeout" from="FlashTimer" to="." method="_on_flash_timer_timeout"]

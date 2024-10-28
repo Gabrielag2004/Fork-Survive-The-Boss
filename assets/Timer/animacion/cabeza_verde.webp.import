@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cveucmq0ym8yi"
-path="res://.godot/imported/ghost.png-afc1c2acc4d7dbd4a713e2c5ac04c7f1.ctex"
+uid="uid://bfo0sd5bsunw2"
+path="res://.godot/imported/cabeza_verde.webp-9af8383aa6f2c1542e689259239536a8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Timer/ghost.png"
-dest_files=["res://.godot/imported/ghost.png-afc1c2acc4d7dbd4a713e2c5ac04c7f1.ctex"]
+source_file="res://assets/Timer/animacion/cabeza_verde.webp"
+dest_files=["res://.godot/imported/cabeza_verde.webp-9af8383aa6f2c1542e689259239536a8.ctex"]
 
 [params]
 

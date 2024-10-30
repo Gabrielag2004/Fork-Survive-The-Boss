@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nm0fhfvc7my3"
-path="res://.godot/imported/barra_verde.webp-9eb10041687ba4622bdd573ab9509557.ctex"
+uid="uid://c7rifhvct1bd8"
+path="res://.godot/imported/cabeza_amarilla.webp-84b8d57bcf454bc97d0deada05d874d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Timer/animacion/barra_verde.webp"
-dest_files=["res://.godot/imported/barra_verde.webp-9eb10041687ba4622bdd573ab9509557.ctex"]
+source_file="res://assets/Timer/animacion/coloresCabezas/cabeza_amarilla.webp"
+dest_files=["res://.godot/imported/cabeza_amarilla.webp-84b8d57bcf454bc97d0deada05d874d5.ctex"]
 
 [params]
 

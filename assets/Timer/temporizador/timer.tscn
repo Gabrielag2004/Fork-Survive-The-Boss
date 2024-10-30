@@ -1,14 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cx14reyaf1jue"]
+[gd_scene load_steps=4 format=3 uid="uid://cx14reyaf1jue"]
 
 [ext_resource type="Script" path="res://assets/Timer/temporizador/timer.gd" id="1_u6ewh"]
-[ext_resource type="Texture2D" uid="uid://dglokpt7jy4wp" path="res://assets/Timer/animacion/coloresBarras/barra_naranja.webp" id="2_p6l4w"]
 [ext_resource type="Texture2D" uid="uid://vcblgu62b50k" path="res://assets/Timer/animacion/coloresBarras/barra_verde.webp" id="3_evwok"]
 [ext_resource type="Texture2D" uid="uid://s5f0nk6nyj7x" path="res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp" id="3_trla3"]
-[ext_resource type="Texture2D" uid="uid://bbn8wgy1bg0s8" path="res://assets/Timer/animacion/coloresCabezas/cabeza_naranja.webp" id="3_yg18q"]
-[ext_resource type="Texture2D" uid="uid://cuyra7wqbsdo2" path="res://assets/Timer/animacion/coloresBarras/barra_roja.webp" id="4_0p8ro"]
-[ext_resource type="Texture2D" uid="uid://3xyohxfp0ad1" path="res://assets/Timer/animacion/coloresCabezas/cabeza_roja.webp" id="5_lmq8e"]
-[ext_resource type="Texture2D" uid="uid://5l87pqhmby7k" path="res://assets/Timer/animacion/coloresBarras/barra_amarilla.webp" id="6_y0b32"]
-[ext_resource type="Texture2D" uid="uid://c7rifhvct1bd8" path="res://assets/Timer/animacion/coloresCabezas/cabeza_amarilla.webp" id="7_0xmii"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_u6ewh")
@@ -16,30 +10,6 @@ script = ExtResource("1_u6ewh")
 [node name="FlashTimer" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
-
-[node name="BarraNaranja" type="Sprite2D" parent="."]
-position = Vector2(770, 442)
-texture = ExtResource("2_p6l4w")
-
-[node name="CabezaNaranja" type="Sprite2D" parent="."]
-position = Vector2(764, 257)
-texture = ExtResource("3_yg18q")
-
-[node name="BarraRoja" type="Sprite2D" parent="."]
-position = Vector2(960, 442)
-texture = ExtResource("4_0p8ro")
-
-[node name="CabezaRoja" type="Sprite2D" parent="."]
-position = Vector2(954, 256)
-texture = ExtResource("5_lmq8e")
-
-[node name="BarraAmarilla" type="Sprite2D" parent="."]
-position = Vector2(583, 439)
-texture = ExtResource("6_y0b32")
-
-[node name="CabezaAmarilla" type="Sprite2D" parent="."]
-position = Vector2(578, 262)
-texture = ExtResource("7_0xmii")
 
 [node name="BarraVerde" type="Sprite2D" parent="."]
 position = Vector2(400, 432)
@@ -50,5 +20,12 @@ texture = ExtResource("3_evwok")
 position = Vector2(400, 264)
 scale = Vector2(1.26316, 1.28182)
 texture = ExtResource("3_trla3")
+
+[node name="Contador" type="RichTextLabel" parent="."]
+offset_left = 472.0
+offset_top = 256.0
+offset_right = 512.0
+offset_bottom = 296.0
+text = "10"
 
 [connection signal="timeout" from="FlashTimer" to="." method="_on_flash_timer_timeout"]

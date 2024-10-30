@@ -1,13 +1,14 @@
 extends Node2D
 
 # declaracion de variables
-var tiempo_total = 15.0 #tiempo total que durará la animación.
+var tiempo_total = 10.0 #tiempo total que durará la animación.
 var tiempo_restante = tiempo_total
 var direction = Vector2.ZERO #Inicializa un vector que se utilizará para almacenar la dirección del movimiento. (0, 0)
 var tween # Declara una variable para almacenar el nodo Tween que se creará.
 var colores = ["verde", "amarillo", "naranja", "rojo"]  # Lista de colores para iterar
 var indice_actual = 0  # Índice del color actual
 var timer = null  # Crear un nuevo timer
+var text_counter = null # contador de texto
 
 func _ready():
 	add_child(Timer.new())
@@ -15,6 +16,8 @@ func _ready():
 	timer.timeout.connect(_on_flash_timer_timeout)
 	timer.wait_time = 1.0  # El timer se activará cada segundo
 	timer.start()  # Iniciar el timer
+	text_counter = get_node("Contador") # contador de texto
+	text_counter.text = str(tiempo_total) # contador de texto
 	# Obtener las cabezas y barras por nombre
 
 func _on_flash_timer_timeout():
@@ -45,7 +48,17 @@ func _on_flash_timer_timeout():
 	if indice_actual < colores.size():
 		barraVerde.visible = true  # Asegurarse de que la barra esté visible
 	# Aquí podrías ocultar o cambiar la barra anterior si lo deseas
-
+	text_counter.text = str(tiempo_restante) # contador de texto
+	print(snapped(tiempo_total * 0.25, 1))
+	if tiempo_restante == snapped(tiempo_total * 0.75, 1):
+		cabezaVerde.set_texture(preload("res://assets/Timer/animacion/coloresCabezas/cabeza_amarilla.webp"))
+		barraVerde.set_texture(preload("res://assets/Timer/animacion/coloresBarras/barra_amarilla.webp"))
+	if tiempo_restante == snapped(tiempo_total * 0.5, 1):
+		cabezaVerde.set_texture(preload("res://assets/Timer/animacion/coloresCabezas/cabeza_naranja.webp"))
+		barraVerde.set_texture(preload("res://assets/Timer/animacion/coloresBarras/barra_naranja.webp"))
+	if tiempo_restante == snapped(tiempo_total * 0.25, 1):
+		cabezaVerde.set_texture(preload("res://assets/Timer/animacion/coloresCabezas/cabeza_roja.webp"))
+		barraVerde.set_texture(preload("res://assets/Timer/animacion/coloresBarras/barra_roja.webp"))
 	# Comprobar si el tiempo se ha agotado
 	if tiempo_restante <= 0:
 		timer.stop()  # Detener el timer

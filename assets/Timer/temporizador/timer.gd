@@ -13,7 +13,7 @@ var text_counter = null # contador de texto
 func _ready():
 	add_child(Timer.new())
 	timer = get_node("FlashTimer")
-	timer.timeout.connect(_on_flash_timer_timeout)
+	#timer.timeout.connect(_on_flash_timer_timeout)
 	timer.wait_time = 1.0  # El timer se activará cada segundo
 	timer.start()  # Iniciar el timer
 	text_counter = get_node("Contador") # contador de texto

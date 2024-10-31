@@ -20,6 +20,5 @@ func _physics_process(_delta):
 		animacion.play("Abajo")
 	else:
 		animacion.stop()
-
 	
 	move_and_slide()

@@ -1,0 +1,66 @@
+[gd_scene load_steps=4 format=3 uid="uid://xry71cujva2"]
+
+[ext_resource type="Script" path="res://configuración.gd" id="1_a8a8h"]
+[ext_resource type="AudioStream" uid="uid://c726kvy3ybbya" path="res://audios/y2mate.com - Undertaker makes his entrance WrestleMania 27.mp3" id="2_dnok8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j1a87"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="Configuracion" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a8a8h")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Vol_label" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Volumen"
+
+[node name="Volumen" type="HSlider" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Vol_label2" type="Label" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Mute
+"
+
+[node name="CheckBox" type="CheckBox" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "1920x1080"
+popup/item_1/text = "1600x1900"
+popup/item_1/id = 1
+popup/item_2/text = "1280x720"
+popup/item_2/id = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_j1a87")
+text = "Volver a Inicio
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_dnok8")
+autoplay = true
+
+[connection signal="value_changed" from="MarginContainer/VBoxContainer/Volumen" to="." method="_on_volumen_value_changed"]
+[connection signal="toggled" from="MarginContainer/VBoxContainer/CheckBox" to="." method="_on_check_box_toggled"]
+[connection signal="item_selected" from="MarginContainer/VBoxContainer/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]

@@ -9,6 +9,7 @@ var colores = ["verde", "amarillo", "naranja", "rojo"]  # Lista de colores para 
 var indice_actual = 0  # Índice del color actual
 var timer = null  # Crear un nuevo timer
 var text_counter = null # contador de texto
+@onready var personaje = $Personaje
 
 func _ready():
 	add_child(Timer.new())
@@ -64,4 +65,6 @@ func _on_flash_timer_timeout():
 		timer.stop()  # Detener el timer
 		# tween.stop() esto para detener si ganas
 		print("¡Tiempo agotado!")
+		personaje.queue_free()
+		get_tree().change_scene_to_file("res://escenas/menu/muerte.tscn")
 		# Aquí puedes agregar lógica adicional para cuando el tiempo se acabe

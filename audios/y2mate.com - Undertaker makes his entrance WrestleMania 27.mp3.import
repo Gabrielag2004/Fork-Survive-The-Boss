@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c726kvy3ybbya"
+path="res://.godot/imported/y2mate.com - Undertaker makes his entrance WrestleMania 27.mp3-6ee59d67a35939b8189688a4f0e91b49.mp3str"
+
+[deps]
+
+source_file="res://audios/y2mate.com - Undertaker makes his entrance WrestleMania 27.mp3"
+dest_files=["res://.godot/imported/y2mate.com - Undertaker makes his entrance WrestleMania 27.mp3-6ee59d67a35939b8189688a4f0e91b49.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

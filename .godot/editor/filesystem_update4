@@ -1,10 +1,6 @@
-res://escenas/principal/timer.tscn
-res://assets/Scrips/Movimiento/character_body_2d.gd
-res://assets/Timer/temporizador/timer.gd
-res://escenas/menu/menu.gd
-res://escenas/menu/menu.tscn
 res://escenas/principal/Prueba1.tscn
-res://configuración.gd
-res://escenas/menu/configuracion.tscn
-res://muerte.gd
-res://escenas/menu/muerte.tscn
+res://escenas/menu/menu.tscn
+res://escenas/principal/Objeto.tscn
+res://assets/Scrips/Movimiento/character_body_2d.gd
+res://escenas/principal/rigid_body_2d.gd
+res://assets/Timer/temporizador/timer.gd

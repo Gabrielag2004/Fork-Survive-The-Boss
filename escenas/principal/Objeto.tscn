@@ -1,15 +1,17 @@
-[gd_scene load_steps=28 format=3 uid="uid://dduwdgr2lu4v7"]
+[gd_scene load_steps=32 format=3 uid="uid://cfowbvpe5l2nd"]
 
-[ext_resource type="Script" path="res://assets/Timer/temporizador/timer.gd" id="1_jdkxe"]
-[ext_resource type="Texture2D" uid="uid://vqi2ddltbys6" path="res://assets/escenario/floor and walls spritesheet black outline.PNG" id="3_fvixe"]
-[ext_resource type="Texture2D" uid="uid://vcblgu62b50k" path="res://assets/Timer/animacion/coloresBarras/barra_verde.webp" id="4_fqolo"]
-[ext_resource type="Texture2D" uid="uid://s5f0nk6nyj7x" path="res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp" id="5_taeuc"]
-[ext_resource type="Script" path="res://assets/Scrips/Movimiento/character_body_2d.gd" id="6_nyt7a"]
-[ext_resource type="Texture2D" uid="uid://dqh56p2ifmpvd" path="res://assets/player/personaje_moya.png" id="7_530p2"]
+[ext_resource type="Script" path="res://assets/Timer/temporizador/timer.gd" id="1_l8uku"]
+[ext_resource type="Texture2D" uid="uid://vqi2ddltbys6" path="res://assets/escenario/floor and walls spritesheet black outline.PNG" id="2_uds7r"]
+[ext_resource type="Texture2D" uid="uid://vcblgu62b50k" path="res://assets/Timer/animacion/coloresBarras/barra_verde.webp" id="3_hdysx"]
+[ext_resource type="Texture2D" uid="uid://s5f0nk6nyj7x" path="res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp" id="4_ny3ue"]
+[ext_resource type="Script" path="res://assets/Scrips/Movimiento/character_body_2d.gd" id="5_0x12f"]
+[ext_resource type="Texture2D" uid="uid://dqh56p2ifmpvd" path="res://assets/player/personaje_moya.png" id="6_v2b0g"]
+[ext_resource type="Script" path="res://escenas/principal/rigid_body_2d.gd" id="7_uyl6s"]
+[ext_resource type="Texture2D" uid="uid://bcwahahntrmfk" path="res://assets/escenario/furniture pack coloured outline.png" id="7_vh5xh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wxkqr"]
 resource_name = "Piso1"
-texture = ExtResource("3_fvixe")
+texture = ExtResource("2_uds7r")
 margins = Vector2i(4, 0)
 separation = Vector2i(1, 0)
 texture_region_size = Vector2i(8, 8)
@@ -216,7 +218,7 @@ texture_region_size = Vector2i(8, 8)
 13:10/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rkgsy"]
-texture = ExtResource("3_fvixe")
+texture = ExtResource("2_uds7r")
 margins = Vector2i(1, 1)
 texture_region_size = Vector2i(8, 8)
 use_texture_padding = false
@@ -431,11 +433,11 @@ use_texture_padding = false
 5:18/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l5dot"]
-texture = ExtResource("3_fvixe")
+texture = ExtResource("2_uds7r")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k6fus"]
 resource_name = "50"
-texture = ExtResource("3_fvixe")
+texture = ExtResource("2_uds7r")
 texture_region_size = Vector2i(8, 8)
 0:0/0 = 0
 1:0/0 = 0
@@ -652,59 +654,59 @@ sources/2 = SubResource("TileSetAtlasSource_l5dot")
 sources/3 = SubResource("TileSetAtlasSource_k6fus")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6m46o"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(0, 0, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tnx7k"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(80, 0, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_brfx0"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(160, 0, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x4ohs"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(240, 0, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0dmfh"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(80, 112, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t48cq"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(0, 112, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d332y"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(240, 224, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_yeiye"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(0, 336, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vhkfe"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(80, 336, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7ftww"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(160, 224, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0rqtg"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(160, 112, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dkjgq"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(240, 112, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_agaw0"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(0, 224, 80, 112)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k6kv2"]
-atlas = ExtResource("7_530p2")
+atlas = ExtResource("6_v2b0g")
 region = Rect2(80, 224, 80, 112)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mpmia"]
@@ -776,9 +778,15 @@ animations = [{
 radius = 20.0
 height = 68.0
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bjd27"]
+size = Vector2(103, 51.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5brhr"]
+size = Vector2(115, 69)
+
 [node name="Main" type="Node2D"]
-position = Vector2(7, 18)
-script = ExtResource("1_jdkxe")
+position = Vector2(7, 21)
+script = ExtResource("1_l8uku")
 
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(877, 471)
@@ -792,12 +800,12 @@ autostart = true
 [node name="BarraVerde" type="Sprite2D" parent="."]
 position = Vector2(1444, 636.25)
 scale = Vector2(1.33333, 1.46597)
-texture = ExtResource("4_fqolo")
+texture = ExtResource("3_hdysx")
 
 [node name="CabezaVerde" type="Sprite2D" parent="."]
 position = Vector2(1444, 468.25)
 scale = Vector2(1.26316, 1.28182)
-texture = ExtResource("5_taeuc")
+texture = ExtResource("4_ny3ue")
 
 [node name="Contador" type="RichTextLabel" parent="."]
 offset_left = 1505.0
@@ -808,26 +816,53 @@ text = "10"
 
 [node name="Personaje" type="Node" parent="."]
 
-[node name="Node2D" type="Node2D" parent="Personaje"]
+[node name="Player" type="Node2D" parent="Personaje"]
+position = Vector2(0, 3)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="Personaje/Node2D"]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Personaje/Player"]
 position = Vector2(-72, 11)
-script = ExtResource("6_nyt7a")
+script = ExtResource("5_0x12f")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Personaje/Node2D/CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Personaje/Player/CharacterBody2D"]
 position = Vector2(866, 424)
 scale = Vector2(3.33086, 3.33086)
 sprite_frames = SubResource("SpriteFrames_mpmia")
 animation = &"Abajo"
 
-[node name="Camera2D" type="Camera2D" parent="Personaje/Node2D/CharacterBody2D"]
+[node name="Camera2D" type="Camera2D" parent="Personaje/Player/CharacterBody2D"]
 position = Vector2(873, 438)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Personaje/Node2D/CharacterBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Personaje/Player/CharacterBody2D"]
 position = Vector2(866, 423)
 shape = SubResource("CapsuleShape2D_os246")
 
-[node name="Node2D" type="Node2D" parent="."]
-visible = false
+[node name="Marker2D" type="Marker2D" parent="Personaje/Player/CharacterBody2D"]
+position = Vector2(865, 438)
+gizmo_extents = 36.8
+
+[node name="Objetos" type="Node2D" parent="."]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Objetos"]
+mass = 0.001
+gravity_scale = 0.0
+script = ExtResource("7_uyl6s")
+
+[node name="Sprite2D" type="Sprite2D" parent="Objetos/RigidBody2D"]
+position = Vector2(789, 558)
+scale = Vector2(3.65301, 3.55634)
+texture = ExtResource("7_vh5xh")
+hframes = 20
+vframes = 21
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objetos/RigidBody2D"]
+position = Vector2(791, 557)
+shape = SubResource("RectangleShape2D_bjd27")
+
+[node name="Area2D" type="Area2D" parent="Objetos"]
+position = Vector2(82, 24)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objetos/Area2D"]
+position = Vector2(709.5, 531.5)
+shape = SubResource("RectangleShape2D_5brhr")
 
 [connection signal="timeout" from="FlashTimer" to="." method="_on_flash_timer_timeout"]

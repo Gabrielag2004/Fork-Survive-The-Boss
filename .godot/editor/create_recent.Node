@@ -1,3 +1,8 @@
+Marker2D
+CollisionShape2D
+Sprite2D
+Area2D
+RigidBody2D
 Button
 Label
 VBoxContainer
@@ -8,7 +13,3 @@ CheckBox
 HSlider
 TextureRect
 ColorRect
-CanvasLayer
-TileMap
-Node2D
-CharacterBody2D

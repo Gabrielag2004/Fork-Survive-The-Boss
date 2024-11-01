@@ -2,8 +2,10 @@ extends CharacterBody2D
 
 
 const velocidad = 300.0
+
 @onready var jugador = $".."
 @onready var animacion = $AnimatedSprite2D
+var canPick = true
 
 func _physics_process(_delta):
 	if Input.is_action_pressed("izquierda"):

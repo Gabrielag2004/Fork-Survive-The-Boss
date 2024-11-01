@@ -1,7 +1,7 @@
 extends Node2D
 
 # declaracion de variables
-var tiempo_total = 10.0 #tiempo total que durará la animación.
+var tiempo_total = 100.0 #tiempo total que durará la animación.
 var tiempo_restante = tiempo_total
 var direction = Vector2.ZERO #Inicializa un vector que se utilizará para almacenar la dirección del movimiento. (0, 0)
 var tween # Declara una variable para almacenar el nodo Tween que se creará.

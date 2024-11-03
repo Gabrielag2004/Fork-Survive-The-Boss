@@ -1,4 +1,5 @@
-extends Node2D
+extends Area2D
+
 # mecánica de arrastrar y soltar objetos entre mesas de crafteo
 # se crea area 2D llamada mov_objeto para para detectar cuándo otros objetos entran o salen de una región de espacio 2D
 

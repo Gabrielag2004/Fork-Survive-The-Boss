@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjjy2m22ujkwo"
-path="res://.godot/imported/tuerca.webp-232c882503a88aaf6d68d5e611074f55.ctex"
+uid="uid://jj6qlajrnopg"
+path="res://.godot/imported/interfaz_crafteo_izq.webp-bebae86745db67faa558c3bd343783d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Timer/animacion/prueba_mov_objeto/tuerca.webp"
-dest_files=["res://.godot/imported/tuerca.webp-232c882503a88aaf6d68d5e611074f55.ctex"]
+source_file="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp"
+dest_files=["res://.godot/imported/interfaz_crafteo_izq.webp-bebae86745db67faa558c3bd343783d1.ctex"]
 
 [params]
 

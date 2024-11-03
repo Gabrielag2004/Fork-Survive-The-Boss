@@ -1,4 +1,7 @@
 res://escenas/principal/Objeto.tscn
-res://movimiento_objeto.gd
-res://assets/Timer/temporizador/timer.gd
 res://escenas/menu/menu.tscn
+res://assets/mesa_crafteo/interfaz/movimiento_objeto/mov_objeto.gd
+res://assets/Timer/temporizador/timer.gd
+res://assets/mesa_crafteo/interfaz/movimiento_objeto/area_2d.gd
+res://sprite_2d.gd
+res://assets/mesa_crafteo/interfaz/movimiento_objeto/arrastrar.tscn

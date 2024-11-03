@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnjqe84tiui13"]
+
+[ext_resource type="Script" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/area_2d.gd" id="1_m7dsg"]
+[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp" id="2_jhsge"]
+[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_de_crafteo_derecho.webp" id="3_7e4xp"]
+[ext_resource type="Texture2D" uid="uid://cjjy2m22ujkwo" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp" id="4_nfhxf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ogd6k"]
+radius = 294.817
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_m7dsg")
+
+[node name="InterfazCrafteoIzq" type="Sprite2D" parent="."]
+position = Vector2(606.688, 335)
+scale = Vector2(1.12291, 0.832764)
+texture = ExtResource("2_jhsge")
+
+[node name="InterfazDeCrafteoDerecho" type="Sprite2D" parent="."]
+position = Vector2(1031, 336)
+scale = Vector2(1.13876, 0.839591)
+texture = ExtResource("3_7e4xp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(952.812, 181.375)
+scale = Vector2(0.0669306, 0.0661262)
+shape = SubResource("CircleShape2D_ogd6k")
+
+[node name="Tuerca" type="Sprite2D" parent="."]
+position = Vector2(952.812, 181.375)
+scale = Vector2(0.0669306, 0.0661262)
+texture = ExtResource("4_nfhxf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]

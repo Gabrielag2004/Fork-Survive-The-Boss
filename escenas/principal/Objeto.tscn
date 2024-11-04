@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://bcwahahntrmfk" path="res://assets/escenario/furniture pack coloured outline.png" id="7_vh5xh"]
 [ext_resource type="PackedScene" uid="uid://bd7yx54opi4cu" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/arrastrar.tscn" id="9_ob8pq"]
 [ext_resource type="Script" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/mov_objeto.gd" id="9_qkyby"]
-[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp" id="10_buuac"]
-[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_de_crafteo_derecho.webp" id="11_w0yku"]
+[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp" id="10_buuac"]
+[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp" id="11_w0yku"]
 [ext_resource type="Texture2D" uid="uid://cjjy2m22ujkwo" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp" id="12_g3tnw"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wxkqr"]

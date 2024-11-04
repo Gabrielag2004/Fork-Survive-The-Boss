@@ -1,0 +1,49 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2goe8255310"]
+
+[ext_resource type="Script" path="res://assets/mesa_crafteo/interfaz/popup/popup.gd" id="1_vtnwx"]
+[ext_resource type="Texture2D" uid="uid://dtcw3w8qsmir1" path="res://assets/mesa_crafteo/interfaz/popup/mesa_de_crafteo.png" id="2_5ou7m"]
+[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp" id="3_wref3"]
+[ext_resource type="Texture2D" uid="uid://qmrra2pcjabj" path="res://assets/mesa_crafteo/interfaz/popup/boton.webp" id="4_226sy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i1482"]
+size = Vector2(232, 235)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6uil7"]
+size = Vector2(92.7275, 101.333)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_vtnwx")
+
+[node name="MesaDeCrafteo" type="Sprite2D" parent="."]
+position = Vector2(477, 285)
+texture = ExtResource("2_5ou7m")
+
+[node name="Area2D" type="Area2D" parent="MesaDeCrafteo"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MesaDeCrafteo/Area2D"]
+position = Vector2(-2, 1.5)
+shape = SubResource("RectangleShape2D_i1482")
+
+[node name="InterfazDeCrafteoDerecho" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1141, 441)
+scale = Vector2(1.2512, 1.11092)
+texture = ExtResource("3_wref3")
+
+[node name="Boton" type="Sprite2D" parent="InterfazDeCrafteoDerecho"]
+position = Vector2(167.04, -247.542)
+scale = Vector2(0.301672, 0.337557)
+texture = ExtResource("4_226sy")
+
+[node name="Area2D" type="Area2D" parent="InterfazDeCrafteoDerecho/Boton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InterfazDeCrafteoDerecho/Boton/Area2D"]
+position = Vector2(1.32471, -9.15527e-05)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_6uil7")
+
+[connection signal="mouse_entered" from="MesaDeCrafteo/Area2D" to="." method="change_cursor_hand"]
+[connection signal="mouse_exited" from="MesaDeCrafteo/Area2D" to="." method="change_cursor_back"]
+[connection signal="input_event" from="InterfazDeCrafteoDerecho/Boton/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="InterfazDeCrafteoDerecho/Boton/Area2D" to="." method="change_cursor_hand_detail"]
+[connection signal="mouse_exited" from="InterfazDeCrafteoDerecho/Boton/Area2D" to="." method="change_cursor_back_detail"]

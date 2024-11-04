@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://cnjqe84tiui13"]
 
 [ext_resource type="Script" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/area_2d.gd" id="1_m7dsg"]
-[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp" id="2_jhsge"]
-[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_de_crafteo_derecho.webp" id="3_7e4xp"]
+[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp" id="2_jhsge"]
+[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp" id="3_7e4xp"]
 [ext_resource type="Texture2D" uid="uid://cjjy2m22ujkwo" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp" id="4_nfhxf"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ogd6k"]

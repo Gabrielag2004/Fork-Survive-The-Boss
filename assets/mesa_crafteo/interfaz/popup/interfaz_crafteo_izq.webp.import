@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://jj6qlajrnopg"
-path="res://.godot/imported/interfaz_crafteo_izq.webp-bebae86745db67faa558c3bd343783d1.ctex"
+path="res://.godot/imported/interfaz_crafteo_izq.webp-506d94dd2d4bf5a1055feb61b3a7f322.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp"
-dest_files=["res://.godot/imported/interfaz_crafteo_izq.webp-bebae86745db67faa558c3bd343783d1.ctex"]
+source_file="res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp"
+dest_files=["res://.godot/imported/interfaz_crafteo_izq.webp-506d94dd2d4bf5a1055feb61b3a7f322.ctex"]
 
 [params]
 

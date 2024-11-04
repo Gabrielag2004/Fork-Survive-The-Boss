@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1730519683
+::res://::1730678736
 configuración.gd::GDScript::-1::1730517558::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::9161771747032397035::1730517558::1730517849::1::::<><>::
 icon.webp::CompressedTexture2D::3626017087650301524::1730517558::1730517849::1::::<><>::
 muerte.gd::GDScript::-1::1730517558::0::1::::<>Control<>::
 README.md::TextFile::-1::1730517558::0::1::::<><>::
-area_2d.gd::GDScript::-1::1730520290::0::1::::<>Area2D<>::
+sprite_2d.gd::GDScript::-1::1730524562::0::1::::<>Sprite2D<>::
 ::res://addons/::1730517558
 ::res://addons/node25d/::1730517851
 3151857.jpg::CompressedTexture2D::9149432997694425260::1730517558::1730517851::1::::<><>::
@@ -41,12 +41,21 @@ godot.png::CompressedTexture2D::6886344442064263112::1730517558::1730517850::1::
 floor and walls spritesheet black outline.PNG::CompressedTexture2D::1507529875570911803::1730517558::1730517850::1::::<><>::
 furniture pack coloured outline.png::CompressedTexture2D::2572227193546179196::1730517558::1730517850::1::::<><>::
 ::res://assets/mesa_crafteo/::1730518223
-::res://assets/mesa_crafteo/interfaz/::1730519683
-::res://assets/mesa_crafteo/interfaz/movimiento_objeto/::1730519773
-interfaz_crafteo_izq.webp::CompressedTexture2D::652190370196083924::1730517558::1730518265::1::::<><>::
-interfaz_de_crafteo_derecho.webp::CompressedTexture2D::4598411759335578252::1730517558::1730518260::1::::<><>::
-mov_objeto.gd::GDScript::-1::1730519773::0::1::::<>Area2D<>::
+::res://assets/mesa_crafteo/interfaz/::1730678736
+::res://assets/mesa_crafteo/interfaz/movimiento_objeto/::1730677968
+area_2d.gd::GDScript::-1::1730524492::0::1::::<>Area2D<>::
+area_2d.tscn::PackedScene::5704856128471686896::1730677968::0::1::::<><>::res://assets/mesa_crafteo/interfaz/movimiento_objeto/area_2d.gd<>uid://jj6qlajrnopg::::res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp<>uid://b6rrf1lnfpqe3::::res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp<>uid://cjjy2m22ujkwo::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp
+arrastrar.tscn::PackedScene::2664547204979640188::1730677968::0::1::::<><>::uid://cjjy2m22ujkwo::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp<>res://sprite_2d.gd<>uid://b6rrf1lnfpqe3::::res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp<>uid://jj6qlajrnopg::::res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp
+mov_objeto.gd::GDScript::-1::1730520600::0::1::::<>Area2D<>::
 tuerca.webp::CompressedTexture2D::5424626457420629066::1730517558::1730518254::1::::<><>::
+::res://assets/mesa_crafteo/interfaz/popup/::1730678736
+boton.webp::CompressedTexture2D::1148856621024925619::1730678728::1730678737::1::::<><>::
+interfaz_crafteo_izq.webp::CompressedTexture2D::652190370196083924::1730517558::1730677964::1::::<><>::
+interfaz_de_crafteo_derecho.webp::CompressedTexture2D::4598411759335578252::1730517558::1730677969::1::::<><>::
+mano.webp::CompressedTexture2D::5897326725728020532::1730677881::1730677886::1::::<><>::
+mesa_de_crafteo.png::CompressedTexture2D::8498365819023988540::1730675110::1730675136::1::::<><>::
+popup.gd::GDScript::-1::1730677941::0::1::::<>Node2D<>::
+popup.tscn::PackedScene::266694295684983661::1730677942::0::1::::<><>::res://assets/mesa_crafteo/interfaz/popup/popup.gd<>uid://dtcw3w8qsmir1::::res://assets/mesa_crafteo/interfaz/popup/mesa_de_crafteo.png
 ::res://assets/platform/::1730517558
 platform.tscn::PackedScene::-1::1730517558::0::1::::<><>::res://addons/node25d/node_25d.gd<>res://addons/node25d/icons/node_25d_icon.png<>res://assets/platform/textures/forty_five.png<>res://assets/platform/platform_sprite.gd
 platform_sprite.gd::GDScript::-1::1730517558::0::1::::<>Sprite2D<>::
@@ -91,8 +100,8 @@ cabeza_amarilla.webp::CompressedTexture2D::8439247477470064598::1730517558::1730
 cabeza_naranja.webp::CompressedTexture2D::4541591333899562694::1730517558::1730517849::1::::<><>::
 cabeza_roja.webp::CompressedTexture2D::7384988867322404835::1730517558::1730517849::1::::<><>::
 cabeza_verde.webp::CompressedTexture2D::1325679447596252267::1730517558::1730517849::1::::<><>::
-::res://assets/Timer/temporizador/::1730519887
-timer.gd::GDScript::-1::1730519887::0::1::::<>Node2D<>::
+::res://assets/Timer/temporizador/::1730520600
+timer.gd::GDScript::-1::1730520600::0::1::::<>Node2D<>::
 timer.tscn::PackedScene::6442649991129533040::1730517558::0::1::::<><>::res://assets/Timer/temporizador/timer.gd<>uid://vcblgu62b50k::::res://assets/Timer/animacion/coloresBarras/barra_verde.webp<>uid://s5f0nk6nyj7x::::res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp
 ::res://assets/ui/::1730517558
 control_hints.gd::GDScript::-1::1730517558::0::1::::<>Control<>::
@@ -101,14 +110,14 @@ overlay_cube.tscn::PackedScene::6939673483472316214::1730517558::0::1::::<><>::r
 ::res://audios/::1730517848
 y2mate.com - Undertaker makes his entrance WrestleMania 27.mp3::AudioStreamMP3::7076523789247625916::1730517558::1730517848::1::::<><>::
 ::res://escenas/::1730517558
-::res://escenas/menu/::1730519774
+::res://escenas/menu/::1730677941
 configuracion.tscn::PackedScene::48557457304217271::1730517558::0::1::::<><>::res://configuración.gd<>uid://c726kvy3ybbya::::res://audios/y2mate.com - Undertaker makes his entrance WrestleMania 27.mp3
 menu.gd::GDScript::-1::1730517558::0::1::::<>Control<>::
-menu.tscn::PackedScene::7752449125511440839::1730519774::0::1::::<><>::uid://cfky2do3w5jms::::res://escenas/principal/wallpaperflare.com_wallpaper.jpg<>res://escenas/menu/menu.gd
+menu.tscn::PackedScene::7752449125511440839::1730677941::0::1::::<><>::uid://cfky2do3w5jms::::res://escenas/principal/wallpaperflare.com_wallpaper.jpg<>res://escenas/menu/menu.gd
 muerte.tscn::PackedScene::5062347454634285498::1730517558::0::1::::<><>::res://muerte.gd
-::res://escenas/principal/::1730519774
+::res://escenas/principal/::1730677968
 3151857.jpg::CompressedTexture2D::6795079455451778263::1730517558::1730517850::1::::<><>::
-Objeto.tscn::PackedScene::5154025560152683041::1730519774::0::1::::<><>::res://assets/Timer/temporizador/timer.gd<>uid://vqi2ddltbys6::::res://assets/escenario/floor and walls spritesheet black outline.PNG<>uid://vcblgu62b50k::::res://assets/Timer/animacion/coloresBarras/barra_verde.webp<>uid://s5f0nk6nyj7x::::res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp<>res://assets/Scrips/Movimiento/character_body_2d.gd<>uid://dqh56p2ifmpvd::::res://assets/player/personaje_moya.png<>res://escenas/principal/rigid_body_2d.gd<>uid://bcwahahntrmfk::::res://assets/escenario/furniture pack coloured outline.png<>res://assets/mesa_crafteo/interfaz/movimiento_objeto/mov_objeto.gd<>uid://jj6qlajrnopg::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp<>uid://b6rrf1lnfpqe3::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_de_crafteo_derecho.webp<>uid://cjjy2m22ujkwo::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp
+Objeto.tscn::PackedScene::5154025560152683041::1730677968::0::1::::<><>::res://assets/Timer/temporizador/timer.gd<>uid://vqi2ddltbys6::::res://assets/escenario/floor and walls spritesheet black outline.PNG<>uid://vcblgu62b50k::::res://assets/Timer/animacion/coloresBarras/barra_verde.webp<>uid://s5f0nk6nyj7x::::res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp<>res://assets/Scrips/Movimiento/character_body_2d.gd<>uid://dqh56p2ifmpvd::::res://assets/player/personaje_moya.png<>res://escenas/principal/rigid_body_2d.gd<>uid://bcwahahntrmfk::::res://assets/escenario/furniture pack coloured outline.png<>uid://bd7yx54opi4cu::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/arrastrar.tscn<>res://assets/mesa_crafteo/interfaz/movimiento_objeto/mov_objeto.gd<>uid://jj6qlajrnopg::::res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp<>uid://b6rrf1lnfpqe3::::res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp<>uid://cjjy2m22ujkwo::::res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp
 Prueba1.tscn::PackedScene::7412457610941225166::1730517558::0::1::::<><>::res://assets/Timer/temporizador/timer.gd<>uid://vqi2ddltbys6::::res://assets/escenario/floor and walls spritesheet black outline.PNG<>uid://vcblgu62b50k::::res://assets/Timer/animacion/coloresBarras/barra_verde.webp<>uid://s5f0nk6nyj7x::::res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp<>res://assets/Scrips/Movimiento/character_body_2d.gd<>uid://dqh56p2ifmpvd::::res://assets/player/personaje_moya.png
 rigid_body_2d.gd::GDScript::-1::1730517558::0::1::::<>RigidBody2D<>::
 timer.tscn::PackedScene::1531663470084798378::1730517558::0::1::::<><>::res://assets/Timer/temporizador/timer.gd<>uid://vcblgu62b50k::::res://assets/Timer/animacion/coloresBarras/barra_verde.webp<>uid://vqi2ddltbys6::::res://assets/escenario/floor and walls spritesheet black outline.png<>uid://vqi2ddltbys6::::res://assets/escenario/floor and walls spritesheet black outline.PNG<>uid://s5f0nk6nyj7x::::res://assets/Timer/animacion/coloresCabezas/cabeza_verde.webp<>res://assets/Scrips/Movimiento/character_body_2d.gd<>uid://dqh56p2ifmpvd::::res://assets/player/personaje_moya.png<>uid://bcwahahntrmfk::::res://assets/escenario/furniture pack coloured outline.png

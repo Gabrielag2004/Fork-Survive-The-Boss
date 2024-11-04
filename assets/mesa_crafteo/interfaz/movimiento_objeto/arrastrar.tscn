@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cjjy2m22ujkwo" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/tuerca.webp" id="1_e0ckf"]
 [ext_resource type="Script" path="res://sprite_2d.gd" id="2_hpmy7"]
-[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_de_crafteo_derecho.webp" id="3_kayb7"]
-[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/movimiento_objeto/interfaz_crafteo_izq.webp" id="4_iwgds"]
+[ext_resource type="Texture2D" uid="uid://b6rrf1lnfpqe3" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_de_crafteo_derecho.webp" id="3_kayb7"]
+[ext_resource type="Texture2D" uid="uid://jj6qlajrnopg" path="res://assets/mesa_crafteo/interfaz/popup/interfaz_crafteo_izq.webp" id="4_iwgds"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_umbq1"]
 radius = 298.605
@@ -17,7 +17,6 @@ script = ExtResource("2_hpmy7")
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-scale = Vector2(1, 1)
 shape = SubResource("CircleShape2D_umbq1")
 
 [node name="InterfazCrafteoIzq" type="Sprite2D" parent="."]
